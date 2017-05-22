@@ -12,7 +12,7 @@ db = client.szdb
 
 @app.route('/')
 def index():
-    return jsonify({'message':'Hallo ' + os.getenv('USER', 'Fabi') + ' :)'})
+    return jsonify({'message':'Hallo ' + os.getenv('USER', 'Fabian') + ' :)'})
 
 @app.route('/appinfo')
 def getAppInfo():
